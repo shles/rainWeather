@@ -123,7 +123,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.56600409750000003" blue="0.5650827289" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="7QD-6v-sJ0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="10U-8n-T6q"/>
                             <constraint firstAttribute="trailing" secondItem="7QD-6v-sJ0" secondAttribute="trailing" id="1BQ-2x-w6q"/>
