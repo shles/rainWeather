@@ -19,8 +19,12 @@ class SearchResultsFromAPI: ObservableType {
                 .map { response in
                     guard (200...299).contains(response.statusCode) else { throw UnknownError() }
 
+                    guard let json = try? response.mapJSON(failsOnEmptyData: true),
+                        let dict = (json as? [String: Any]),
+                        let photos = dict["photos"] as? [String: Any]
+                     else  { throw UnknownError() }
                     return try Mapper<JSONFlickrSearchResult>()
-                            .mapArray(JSONObject: (((response.mapJSON(failsOnEmptyData: true) as! [String: Any])["photos"] as! [String: Any])["photo"]))
+                            .mapArray(JSONObject: photos["photo"])
                 }
                 .subscribe(observer)
 
@@ -57,7 +61,7 @@ class FlickrSearchTarget: TargetType {
 
     var parameters: [String: Any]? {
         return [
-            "api_key"  : "731b6251256d60f600098671a785791a",
+            "api_key"  : "7d19390a462f984ac72ed9bc8dd69880",
             "text" : text,
             "format" : "json",
             "nojsoncallback": 1
