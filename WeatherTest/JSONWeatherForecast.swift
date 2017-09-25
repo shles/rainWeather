@@ -18,7 +18,7 @@ class JSONWeatherForecast: WeatherForecast, ImmutableMappable {
     
     
     required init(map: Map) throws {
-        temperature = "\(Int(try map.value("main.temp") as Float) - 273)"
+        temperature = "\(Int(try map.value("main.temp") as Float))"
         let array = try map.value("weather") as [NSDictionary]
         icon = try JSONIconImage(name: array[0]["icon"] as! String )
         time = try Date(timeIntervalSince1970: TimeInterval(map.value("dt") as Int))

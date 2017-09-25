@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C28758AAE2E8493C053DF2F /* SearchResultsFromAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28727CD31EF48441364D53 /* SearchResultsFromAPI.swift */; };
+		4C287985C21B6E80910BCEFA /* FlickrSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287275C4782BB0A08CC908 /* FlickrSearchResult.swift */; };
 		7E90673FA5BF9590D474FC9F /* Pods_WeatherTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF47A6AB62D8E60944C3CC13 /* Pods_WeatherTest.framework */; };
 		FD1F86761F78245A004405EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1F86751F78245A004405EF /* AppDelegate.swift */; };
 		FD1F86781F78245A004405EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1F86771F78245A004405EF /* ViewController.swift */; };
@@ -24,10 +26,13 @@
 		FD78592E1F783AAC0010BB39 /* WeatherForecastsFromAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD78592D1F783AAC0010BB39 /* WeatherForecastsFromAPI.swift */; };
 		FD7859301F783D3A0010BB39 /* JSONWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD78592F1F783D3A0010BB39 /* JSONWeatherForecast.swift */; };
 		FD7859321F7859620010BB39 /* ImageFromFlickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7859311F7859620010BB39 /* ImageFromFlickr.swift */; };
+		FD7859341F787E210010BB39 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7859331F787E210010BB39 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D88F8A14A45C511AE2CEE9C /* Pods-WeatherTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherTest/Pods-WeatherTest.release.xcconfig"; sourceTree = "<group>"; };
+		4C287275C4782BB0A08CC908 /* FlickrSearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrSearchResult.swift; sourceTree = "<group>"; };
+		4C28727CD31EF48441364D53 /* SearchResultsFromAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsFromAPI.swift; sourceTree = "<group>"; };
 		5E5F1E916E0A7EED22335160 /* Pods-WeatherTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherTest/Pods-WeatherTest.debug.xcconfig"; sourceTree = "<group>"; };
 		CF47A6AB62D8E60944C3CC13 /* Pods_WeatherTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1F86721F78245A004405EF /* WeatherTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +53,7 @@
 		FD78592D1F783AAC0010BB39 /* WeatherForecastsFromAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherForecastsFromAPI.swift; sourceTree = "<group>"; };
 		FD78592F1F783D3A0010BB39 /* JSONWeatherForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONWeatherForecast.swift; sourceTree = "<group>"; };
 		FD7859311F7859620010BB39 /* ImageFromFlickr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFromFlickr.swift; sourceTree = "<group>"; };
+		FD7859331F787E210010BB39 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/WeatherTest-demhkramgefsnhcfgtmpdabiwios/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7859341F787E210010BB39 /* Alamofire.framework in Frameworks */,
 				7E90673FA5BF9590D474FC9F /* Pods_WeatherTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +81,7 @@
 		CF6248CDF363AB11F15C2522 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD7859331F787E210010BB39 /* Alamofire.framework */,
 				CF47A6AB62D8E60944C3CC13 /* Pods_WeatherTest.framework */,
 			);
 			name = Frameworks;
@@ -117,6 +125,8 @@
 				FD1F867C1F78245A004405EF /* Assets.xcassets */,
 				FD1F867E1F78245A004405EF /* LaunchScreen.storyboard */,
 				FD1F86811F78245A004405EF /* Info.plist */,
+				4C287275C4782BB0A08CC908 /* FlickrSearchResult.swift */,
+				4C28727CD31EF48441364D53 /* SearchResultsFromAPI.swift */,
 			);
 			path = WeatherTest;
 			sourceTree = "<group>";
@@ -280,6 +290,8 @@
 				FD7859261F782FD10010BB39 /* UnknownError.swift in Sources */,
 				FD78591E1F782CDB0010BB39 /* JSONIconImage.swift in Sources */,
 				FD7859241F782F570010BB39 /* AnyURLTarget.swift in Sources */,
+				4C287985C21B6E80910BCEFA /* FlickrSearchResult.swift in Sources */,
+				4C28758AAE2E8493C053DF2F /* SearchResultsFromAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

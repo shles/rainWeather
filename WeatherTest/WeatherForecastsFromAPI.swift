@@ -22,6 +22,7 @@ class WeatherForecastsFromAPI: WeatherForecasts, ObservableType {
             .request(WeatherForecastsTarget())
             
             .map { response in
+                
                 guard (200...299).contains(response.statusCode) else { throw UnknownError() }
 
                 return try Mapper<JSONWeatherForecast>()
@@ -36,7 +37,7 @@ class WeatherForecastsTarget: TargetType {
     
     var path: String = "forecast"
 
-    var baseURL: URL = URL(string:"http://samples.openweathermap.org/data/2.5/")!
+    var baseURL: URL = URL(string:"http://api.openweathermap.org/data/2.5/")!
     
     var task: Task {
         return .request
@@ -48,9 +49,9 @@ class WeatherForecastsTarget: TargetType {
     
     var parameters: [String: Any]? {
         return  [
-            "id" :524901 ,
-            "appid"  : "b1b15e88fa797225412429c1c50c122a1",
-
+            "q" : "Moscow" ,
+            "appid"  : "16a3b6f788a0136e0bc6bd18325242e4",
+            "units": "metric"
         ]
     }
     
